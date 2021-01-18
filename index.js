@@ -8,6 +8,7 @@ async function screenshot(url) {
     const browser = await puppeteer.launch({
       headless: true,
       product: 'firefox',
+      executablePath: 'usr/bin/firefox',
       args: [
         "--no-sandbox",
         "--disable-gpu",
