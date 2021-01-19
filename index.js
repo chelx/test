@@ -7,8 +7,8 @@ async function screenshot(url) {
   try {
     const browser = await puppeteer.launch({
       headless: true,
-      product: 'firefox',
-      executablePath: 'usr/bin/firefox',
+      product: 'chrome',
+      executablePath: '/data/app/com.android.chrome-1.apk',
       args: [
         "--no-sandbox",
         "--disable-gpu",
